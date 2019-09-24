@@ -26,6 +26,18 @@ export default class Time extends Component {
   }
 
   render() {
-    return <div>{this.state.time}</div>;
+    return (
+      <div className="d-flex justify-content-center">
+        <div
+          className="card text-white bg-success mb-3 mt-3"
+          style={{ maxWidth: "18rem" }}
+        >
+          <div className="card-header">Tiempo</div>
+          <div className="card-body">
+            <h5 className="card-title">{this.state.time}</h5>
+          </div>
+        </div>
+      </div>
+    );
   }
 }
