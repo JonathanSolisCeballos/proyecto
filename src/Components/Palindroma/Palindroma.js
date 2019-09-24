@@ -4,7 +4,8 @@ export default class Palindroma extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      textarea: ""
+      textarea: "",
+      valores: []
     };
   }
   handleChange = e => {
@@ -14,6 +15,10 @@ export default class Palindroma extends Component {
   };
   handleClick = e => {
     console.log(this.state.textarea);
+    let r = this.state.textarea.split("");
+    this.setState({
+      valores: r
+    });
   };
   render() {
     return (
@@ -35,6 +40,9 @@ export default class Palindroma extends Component {
         >
           Obtener
         </button>
+        {this.state.valores.map(el => {
+          return <h5>{el}</h5>;
+        })}
       </div>
     );
   }
