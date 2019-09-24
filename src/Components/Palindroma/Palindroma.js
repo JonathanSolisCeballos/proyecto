@@ -19,7 +19,7 @@ export default class Palindroma extends Component {
     return (
       <div className="container">
         <div className="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
+          <label htmlFor="exampleFormControlTextarea1">Example textarea</label>
           <textarea
             className="form-control"
             id="exampleFormControlTextarea1"
@@ -30,7 +30,7 @@ export default class Palindroma extends Component {
         </div>
         <button
           type="button"
-          class="btn btn-outline-primary"
+          className="btn btn-outline-primary"
           onClick={this.handleClick}
         >
           Obtener
