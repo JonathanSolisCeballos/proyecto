@@ -9,16 +9,13 @@ export default class Palindroma extends Component {
     };
   }
   handleChange = e => {
+    let r = e.target.value.split("");
     this.setState({
-      textarea: e.target.value
+      valores: r
     });
   };
   handleClick = e => {
     console.log(this.state.textarea);
-    let r = this.state.textarea.split("");
-    this.setState({
-      valores: r
-    });
   };
   render() {
     return (
