@@ -40,8 +40,8 @@ export default class Palindroma extends Component {
         >
           Obtener
         </button>
-        {this.state.valores.map(el => {
-          return <h5>{el}</h5>;
+        {this.state.valores.map((el, indx) => {
+          return <h5 key={indx}>{el}</h5>;
         })}
       </div>
     );
